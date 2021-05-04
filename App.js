@@ -1,16 +1,23 @@
 import * as React from "react";
-import { View, Text } from "react-native";
+import { StyleSheet, SafeAreaView } from "react-native";
+import TelaA from './src/views/TelaA'
+import TelaB from './src/views/TelaB'
+import TelaC from './src/views/TelaC'
+import Nav from './src/routes'
 
 export default function App() {
-  return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Universal React with Expo</Text>
-    </View>
-  );
+  	return (
+		  <Nav />
+		// <SafeAreaView style={styles.container}>
+		// 	<TelaA />
+		// 	<TelaB />
+		// 	<TelaC />
+		// </SafeAreaView>
+  	);
 }
+
+const styles = StyleSheet.create({
+	container: {
+		flex: 1
+	}
+})
