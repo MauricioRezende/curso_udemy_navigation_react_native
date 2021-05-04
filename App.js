@@ -1,8 +1,5 @@
 import * as React from "react";
 import { StyleSheet, SafeAreaView } from "react-native";
-import TelaA from './src/views/TelaA'
-import TelaB from './src/views/TelaB'
-import TelaC from './src/views/TelaC'
 import Nav from './src/routes'
 
 export default function App() {
